@@ -54,8 +54,18 @@ public class AWS {
 
 	
 	public void removeConsecutiveRepeats() {
-		// TODO Auto-generated method stub
+		for (int i = 1; i < values.length; )
+			if (values[i] == FILLER_VALUE)
+				break;
+			else if (values[i] == values[i-1])
+				this.remove(i);
+			else ++i;
 		
+		for (int i = 0; i < values.length; ++i)
+			if (values[i] == FILLER_VALUE) {
+				values = Arrays.copyOf(values, i);
+				break;
+			}
 	}
 
 }
