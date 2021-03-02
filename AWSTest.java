@@ -1,5 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.Arrays;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -40,7 +42,8 @@ class AWSTest {
 
 	@Test
 	void testToString() {
-		fail("Not yet implemented");
+		String expected = "AWS [values=" + Arrays.toString(original) + "]";
+		assertEquals(expected, originalAWS.toString());
 	}
 
 	@Test
