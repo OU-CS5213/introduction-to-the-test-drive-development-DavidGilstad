@@ -141,6 +141,6 @@ class AWSTest {
 		originalAWS.removeConsecutiveRepeats();
 		
 		assertEquals(original.length, originalAWS.getValues().length);
-		assertEquals(original.equals(originalAWS.getValues()), true);
+		assertArrayEquals(original, originalAWS.getValues());
 	}
 }
