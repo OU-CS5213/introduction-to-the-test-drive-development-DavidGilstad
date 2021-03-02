@@ -38,21 +38,17 @@ public class AWS {
 	public void fillAndExpand(int position, int nt) {
 		int numberOfTimes = Math.abs(nt);
 		int[] newArray = new int[values.length + numberOfTimes];
-		for(int i = 0; i <=position; ++i) {
-			newArray[i] = values[i];
-		}
-		for(int i = position; i<=numberOfTimes + position; ++i) {
-			newArray[i] = newArray[position];
-		}
-		// Make examples, so it is easier to visualize your methods
-		//   p 1 2
-		// a b c
-		// a b b b c
 		
-		int x = numberOfTimes;
-		for(int i = position+1; i <values.length; ++i ) {
-			newArray[i+x] = values[i];
-		}
+		for(int i = 0; i <=position; ++i)
+			newArray[i] = values[i];
+
+		int fillValue = newArray[position] * (nt < 0 ? -1: 1);
+		for(int i = position; i<=numberOfTimes + position; ++i)
+			newArray[i] = fillValue;
+		
+		for(int i = position+1; i <values.length; ++i )
+			newArray[i+numberOfTimes] = values[i];
+		
 		values = newArray;
 	}
 
