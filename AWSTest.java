@@ -116,7 +116,7 @@ class AWSTest {
 		int numberOfTimes = -2;
 		
 		int[] org = originalAWS.getValues();
-		int expectedValue = org[position];
+		int expectedValue = -org[position];
 		int first = org[0];
 		int expected = originalAWS.getValues().length + Math.abs(numberOfTimes);
 		originalAWS.fillAndExpand(position, numberOfTimes);
@@ -127,8 +127,8 @@ class AWSTest {
 		int b = result[2];
 		int c = result[3];
 		assertEquals(expectedValue, a);
-		assertEquals(-expectedValue, b);
-		assertEquals(-expectedValue, c);
+		assertEquals(expectedValue, b);
+		assertEquals(expectedValue, c);
 
 		assertEquals(first, result[0]);
 
