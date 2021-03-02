@@ -134,4 +134,13 @@ class AWSTest {
 
 	}
 
+	@Test
+	void testRemoveConsecutiveRepeats() {
+		originalAWS.fillAndExpand(2, 4);
+		originalAWS.fillAndExpand(0, 3);
+		originalAWS.removeConsecutiveRepeats();
+		
+		assertEquals(original.length, originalAWS.getValues().length);
+		assertEquals(original.equals(originalAWS.getValues()), true);
+	}
 }

@@ -52,4 +52,10 @@ public class AWS {
 		values = newArray;
 	}
 
+	
+	public void removeConsecutiveRepeats() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
