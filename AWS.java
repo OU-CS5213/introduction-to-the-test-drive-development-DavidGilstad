@@ -66,15 +66,13 @@ public class AWS {
 	 *         invalid.
 	 */
 	public int remove(int i) {
-		int value = FILLER_VALUE;
-
-		if (i >= 0 && i < values.length) {
-			value = values[i];
-			for (int index = i; index < values.length - 1; ++index) {
-				values[index] = values[index + 1];
-			}
-			values[values.length - 1] = FILLER_VALUE;
-		}
+		if (i < 0 || i >= values.length) return FILLER_VALUE;
+		
+		int value = values[i];
+		for (int index = i; index < values.length - 1; ++index)
+			values[index] = values[index + 1];
+		values[values.length - 1] = FILLER_VALUE;
+		
 		return value;
 	}
 
