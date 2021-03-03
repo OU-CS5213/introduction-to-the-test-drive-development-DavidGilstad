@@ -1,5 +1,9 @@
 name: Run-Junit-Tests
-on: [push]
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  
 jobs:
   junit_test:
     runs-on: ubuntu-latest
