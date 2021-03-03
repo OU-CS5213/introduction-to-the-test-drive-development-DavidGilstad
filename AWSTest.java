@@ -21,19 +21,19 @@ class AWSTest {
 		// make sure new array doesn't point to same reference
 		int[] newArray = originalAWS.getValues();
 		assertNotEquals(newArray, originalAWS.getValues());
-		
+
 		// just to be sure, make sure updates don't change original
 		assertNotEquals(++newArray[0], originalAWS.getValues()[0]);
 		assertEquals(--newArray[0], originalAWS.getValues()[0]);
-		
+
 	}
 
 	@Test
 	void testSetValues() {
-		int[] expected = {2, 3, 4};
-		int[] setArray = {2, 3, 4};
+		int[] expected = { 2, 3, 4 };
+		int[] setArray = { 2, 3, 4 };
 		originalAWS.setValues(setArray);
-		
+
 		// change set array but make sure aws values don't change
 		setArray[1] = 37;
 		assertEquals(expected[1], originalAWS.getValues()[1]);
@@ -114,7 +114,7 @@ class AWSTest {
 	void testFillAndExpandWithNegative() {
 		int position = 1;
 		int numberOfTimes = -2;
-		
+
 		int[] org = originalAWS.getValues();
 		int expectedValue = -org[position];
 		int first = org[0];
@@ -139,7 +139,7 @@ class AWSTest {
 		originalAWS.fillAndExpand(2, 4);
 		originalAWS.fillAndExpand(0, 3);
 		originalAWS.removeConsecutiveRepeats();
-		
+
 		assertEquals(original.length, originalAWS.getValues().length);
 		assertArrayEquals(original, originalAWS.getValues());
 	}
