@@ -89,7 +89,6 @@ public class AWS {
      * @param position - index of values to copy and expand, must be valid index.
      * @param nt       - number of times to copy and insert value at
      *                 <code>position</code>.
-     * @throws indexOutOfBoundsException if <code>position</code> is invalid.
      */
     public void fillAndExpand(int position, int nt) {
         int numberOfTimes = Math.abs(nt);
