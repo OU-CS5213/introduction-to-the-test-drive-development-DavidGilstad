@@ -8,21 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edd49d7a-598e-4489-9cb8-06cfc3d81994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/AWS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduction-to-the-test-drive-development-DavidGilstad" beforeDir="false" afterPath="$PROJECT_DIR$/introduction-to-the-test-drive-development-DavidGilstad" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduction-to-the-test-drive-development-DavidGilstad/.github/.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduction-to-the-test-drive-development-DavidGilstad/.github/workflows/maven.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduction-to-the-test-drive-development-DavidGilstad/AWS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduction-to-the-test-drive-development-DavidGilstad/AWSTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduction-to-the-test-drive-development-DavidGilstad/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Java/AWSTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/AWS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +46,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\david\IdeaProjects\AWS" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\david\IdeaProjects\AWS" />
       <recent name="C:\Users\david\IdeaProjects\AWS\src\test\java" />
@@ -103,5 +100,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/AWS.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
