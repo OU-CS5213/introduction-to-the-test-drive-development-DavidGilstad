@@ -21,8 +21,11 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
-      - name: Run tests with Maven
-        run: mvn -B test --file pom.xml
-      - name: 'JUnit 5 SNAPSHOT build: Maven'
-        run: cd ${GITHUB_WORKSPACE}/junit5-jupiter-starter-maven && ./mvnw test --batch-mode --file pom.xml
+#      - name: Run tests with Maven
+#        run: mvn -B test --file pom.xml
+      - name: Run Maven tests
+        run: |
+          cd ${GITHUB_WORKSPACE}/src/test/Java 
+          mvn -B test --file pom.xml
+# && ./mvnw test --batch-mode --file pom.xml
 
