@@ -1,5 +1,5 @@
 # AWS class with Test Driven Development (TDD)
-**Worke done without commits to GitHub will not be graded.**
+**Work done without commits to GitHub will not be graded.**
 
 Try to *check* the *checkboxes* as you go, and commit changes to the Readme.md as well.
 
